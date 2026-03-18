@@ -76,3 +76,28 @@ Each module simulates a real-world food delivery workflow to explain OS concepts
 ---
 
 ## 🧱 Project Structure
+
+OSPROJECT-FOOD-DELIVERY-SYSTEM/
+│
+├── mlfq.c                     - Multi-Level Feedback Queue Scheduling
+├── deadlock_demo.c           - Deadlock demonstration using threads
+├── deadlock_prevention.c     - Deadlock-free implementation (resource ordering)
+├── producer_consumer.c       - Producer-Consumer using semaphores
+├── cache_algorithms.c        - LRU & FIFO cache implementation
+│
+└── README.md
+
+---
+
+## ⚙️ Requirements
+
+- GCC Compiler  
+- Linux / Windows (MinGW / WSL)  
+- pthread library support  
+
+---
+
+## 🛠️ Compilation & Execution
+
+### 🔹 Compile
+gcc filename.c -o output -lpthread
