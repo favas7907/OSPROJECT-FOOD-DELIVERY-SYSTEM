@@ -97,7 +97,43 @@ OSPROJECT-FOOD-DELIVERY-SYSTEM/
 
 ---
 
-## 🛠️ Compilation & Execution
+## ▶️ Execution Commands
 
-### 🔹 Compile
-gcc filename.c -o output -lpthread
+### 🔹 Compile (for programs using pthread)
+- gcc filename.c -o output -lpthread
+
+### 🔹 Compile (for normal C programs)
+- gcc filename.c -o output
+
+### 🔹 Run
+- ./output
+
+---
+
+## 📌 Examples
+
+### 1. Deadlock Program
+gcc deadlock_demo.c -o deadlock -lpthread
+./deadlock
+
+### 2. Deadlock Prevention
+gcc deadlock_prevention.c -o safe -lpthread
+./safe
+
+### 3. Producer-Consumer
+gcc producer_consumer.c -o pc -lpthread
+./pc
+
+### 4. MLFQ Scheduling
+gcc mlfq.c -o mlfq
+./mlfq
+
+### 5. Cache Algorithms (LRU & FIFO)
+gcc cache_algorithms.c -o cache
+./cache
+
+---
+
+## 💡 Tip
+- On Windows (Command Prompt / PowerShell):
+  output.exe
