@@ -1,2 +1,78 @@
-# OSPROJECT-FOOD-DELIVERY-SYSTEM
-OS Lab project implementing scheduling, synchronization, deadlock, and caching
+# 🍽️ OS Project – Food Delivery System (C Implementation)
+
+A collection of **Operating System concepts implemented in C** using a real-world **Food Delivery System simulation**.
+
+This project demonstrates core OS concepts like **Scheduling, Deadlocks, Synchronization, and Memory Management** using practical and easy-to-understand scenarios.
+
+---
+
+## 📌 Project Overview
+
+This repository contains multiple OS lab activities implemented using:
+
+- **C Programming**
+- **POSIX Threads (pthreads)**
+- **Semaphores & Mutex Locks**
+
+Each module simulates a real-world food delivery workflow to explain OS concepts clearly.
+
+---
+
+## 🚀 Implemented Concepts
+
+### 1️⃣ Multi-Level Feedback Queue (MLFQ Scheduling)
+- Simulates restaurant order processing
+- Uses multiple queues with different priorities
+- Implements:
+  - Time slicing (Round Robin)
+  - Priority demotion
+  - Aging for starvation prevention
+
+---
+
+### 2️⃣ Deadlock Demonstration
+- Simulates delivery partners competing for resources:
+  - Order
+  - Vehicle
+  - GPS
+  - Delivery Bag
+- Demonstrates all **4 conditions of deadlock**:
+  - Mutual Exclusion
+  - Hold and Wait
+  - No Preemption
+  - Circular Wait
+
+---
+
+### 3️⃣ Deadlock Prevention
+- Fixes deadlock by enforcing **resource ordering**
+- Ensures all threads acquire locks in the same sequence
+- Eliminates circular wait condition
+
+---
+
+### 4️⃣ Producer-Consumer Problem
+- Simulates:
+  - Order Takers → Producers
+  - Chefs → Consumers
+- Uses:
+  - **Semaphores (`empty`, `full`, `mutex`)**
+  - Circular buffer
+- Prevents:
+  - Buffer overflow
+  - Buffer underflow
+
+---
+
+### 5️⃣ Cache Algorithms (Memory Management)
+- Simulates menu request caching
+- Implements:
+  - **LRU (Least Recently Used)**
+  - **FIFO (First In First Out)**
+- Tracks:
+  - Cache hits
+  - Cache misses
+
+---
+
+## 🧱 Project Structure
